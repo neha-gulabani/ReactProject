@@ -1,0 +1,63 @@
+.notesArea {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%; /* Ensure it takes full width */
+  background-color: #f7ecdc;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .noteItem {
+    display: flex;
+    padding: 20px;
+
+    .noteMeta {
+      flex: 0 0 100px;
+      text-align: right;
+      margin-right: 20px;
+      font-size: 14px;
+      color: #333;
+
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .noteContent {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+
+      .noteActions {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        button {
+          background: none;
+          border: none;
+          color: #007bff;
+          cursor: pointer;
+          margin-bottom: 5px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

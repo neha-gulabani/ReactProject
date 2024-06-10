@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  height: 100vh; /* Full page height */
+}
+
+.hamburgerButton {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  flex: 1; /* Sidebar takes 1/8th column */
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    transform: translateX(-100%);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.notesScreen {
+  flex: 7; /* Notes screen takes the remaining width */
+  flex-grow: 1; /* Ensures it takes the remaining width */
+}
+
+@media (max-width: 768px) {
+  .hamburgerButton {
+    display: block;
+  }
+
+  .notesScreen {
+    margin-left: 0;
+  }
+}

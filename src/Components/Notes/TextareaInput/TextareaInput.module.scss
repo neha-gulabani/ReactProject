@@ -1,0 +1,38 @@
+.textareaContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0 0 8px 8px;
+
+  textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .clearButton,
+  .submitButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 10px;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+}

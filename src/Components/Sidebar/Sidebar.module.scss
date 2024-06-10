@@ -1,0 +1,62 @@
+.sidebar {
+  width: 300px;
+  padding: 20px 0 20px 20px;
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .createButton {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+
+    .plusIcon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .groupList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+    .groupItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 15px 0 0 15px;
+
+      &.selected {
+        background-color: #f7ecdc; /* Add the background color for the selected state */
+      }
+
+      .groupCircle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .groupTitle {
+        font-size: 16px;
+      }
+    }
+  }
+}

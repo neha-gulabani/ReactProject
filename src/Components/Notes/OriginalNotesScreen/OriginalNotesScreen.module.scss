@@ -1,0 +1,33 @@
+.noGroupsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f7ecdc;
+
+  .illustration {
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .encryptionNotice {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+}
